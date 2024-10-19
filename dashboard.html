@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="login.html">Logout</a></li>
+        </ul>
+    </nav>
+
+    <div class="dashboard">
+        <h2>Welcome, [Student Name]!</h2>
+
+        <section class="performance">
+            <h3>Your Academic Performance</h3>
+            <p>GPA: 3.8</p>
+            <p>Attendance: 85%</p>
+            <div id="performance-graph"></div> <!-- Placeholder for performance graph -->
+        </section>
+
+        <section class="solutions">
+            <h3>Suggested Solutions</h3>
+            <ul id="solutions-list">
+                <li>Consider joining study groups.</li>
+                <li>Seek help from your professors for difficult subjects.</li>
+                <li>Utilize campus resources for health and financial aid.</li>
+            </ul>
+        </section>
+
+        <section class="schedule-appointment">
+            <h3>Schedule a New Appointment</h3>
+            <form id="appointment-form">
+                <label for="date">Appointment Date:</label>
+                <input type="date" id="date" name="appointment_date" required>
+
+                <label for="counselor">Choose a Counselor:</label>
+                <select id="counselor" name="counselor_id">
+                    <option value="1">Dr. Smith</option>
+                    <option value="2">Dr. Jones</option>
+                </select>
+
+                <button type="submit">Schedule Appointment</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Intelligent Student Counseling System</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
